@@ -1,0 +1,981 @@
+/* Se establece la fuente para todos los elementos */
+* {
+    font-family: 'Mukta', sans-serif;
+}
+
+/* Estilo para el contenedor del fondo en la página principal */
+.body-home {
+    margin: 0px;
+    background-image: linear-gradient(to right, red, pink);
+}
+
+/* Elimina el margen predeterminado para todo el cuerpo */
+body {
+    margin: 0 !important;
+}
+
+/* Estilo para los enlaces */
+a{
+    color: #1d1d1d;
+}
+
+/* Contenedor para el logo */
+.Logo{
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+/* Estilo para la imagen del logo */
+.Logo img{
+    height: 50px;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+/* Animación de escala en el logo */
+.Logo img:hover {
+    transform: scale(1.2);
+}
+
+/* Estilo para los botones */
+button {
+    font-size: 8px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+/* Contenedor para la barra de navegación */
+.page-nav {
+    background-color: #eb1a1a;
+    border: 1px solid #1d1d1d;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Estilo para el título de la barra de navegación */
+.page-nav h1 {
+    margin: 20px;
+}
+
+/* Estilo para la barra de navegación */
+nav {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: #1d1d1d;
+    letter-spacing: 5px;
+}
+
+/* Lista sin marcadores y alineación ajustada para los elementos de la barra de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para los enlaces de la barra de navegación */
+nav a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Estilo para los enlaces de la barra de navegación al hacer hover */
+nav a:hover {
+    background-color: #1d1d1d;
+    color: #eb1a1a;
+}
+
+/* Media query para hacer la barra de navegación responsiva */
+@media screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+}
+
+/* Estilo para los enlaces de la barra de navegación al hacer hover */
+nav a:hover {
+    background-color: #1d1d1d;
+    color: #eb1a1a;
+}
+
+/* Estilo para el botón de checkout */
+.button-checkout {
+    background-color: white;
+    color: #1d1d1d;
+    border: 2px solid #1d1d1d;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+}
+/* Estilo para cuando se pasa el cursor sobre el botón checkout */
+.button-checkout:hover {
+    background-color: #f02c0d;
+    color: white;
+}
+
+/* Estilo para el contenido de la página */
+.page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* Estilos para el contenedor de productos en pantallas grandes */
+.product-container {
+    margin: 20px;
+    padding: 2px 16px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    background-color: white;
+    transition: all 0.3s ease-in-out; /* Animación de transición */
+    transform: translateY(0); /* Para volver a la posición original */
+    max-width: 350px; /* Ancho máximo para evitar que se haga demasiado grande */
+}
+
+/* Estilos para el contenedor de productos en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+.product-container {
+    max-width: 100%; /* Ancho máximo del 100% en pantallas pequeñas */
+    margin: 10px; /* Reducir el margen en pantallas pequeñas */
+}
+}
+
+/* Cambiar el ancho de los contenedores de productos según el tamaño de la pantalla */
+@media (min-width: 768px) {
+    .product-container {
+        max-width: 400px;
+    }
+}
+
+/* Animación para cuando se pasa el cursor sobre el contenedor de productos */
+.product-container:hover {
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2);
+    transform: translateY(-10px); /* Mover hacia arriba 10px */
+}
+
+/* Estilo para la imagen dentro del contenedor de productos */
+.product-container img {
+    width: 100%;
+}
+
+/* Estilo para el título dentro del contenedor de productos */
+.product-container h1 {
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-size: 1.5rem; /* Aumentar el tamaño de letra para pantallas más grandes */
+}
+
+/* Estilo para el botón añadir */
+.button-add {
+    background-color: white;
+    color: #1d1d1d;
+    border: 2px solid #f52525;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    font-size: 1.2rem; /* Aumentar el tamaño de letra para pantallas más grandes */
+}
+
+/* Estilo para cuando se pasa el cursor sobre el botón añadir */
+.button-add:hover {
+    background-color: #f72515;
+    color: white;
+}
+
+/* Estilo para el contenedor que alinea el contenido del video en el centro */
+.center-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Estilo para cuando el usuario pasa el cursor sobre el contenedor de video */
+.center-video:hover {
+    color: #1d1d1d;
+    transition-duration: 0.4s;
+}
+
+/* Estilo para las imágenes dentro del contenedor */
+.Fotos {
+    width: 100%;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #1d1d1d;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 40px 0;
+}
+
+/* Contenedor principal del footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Estilos para cada sección del footer */
+.footer-section {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+}
+
+/* Estilos para los títulos de cada sección */
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Estilos para las listas en cada sección */
+.footer-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para cada ítem de las listas */
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los enlaces en los ítems de las listas */
+.footer-section ul li a {
+    color: #d9d9d9;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/* Estilos para los iconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para cada ítem de los iconos sociales */
+.social-icons li {
+    margin-right: 15px;
+}
+
+@media screen and (min-width: 768px){
+/* Estilos para cada sección del footer en pantallas grandes */
+.footer-section {
+    flex-basis: 25%;
+    padding: 0 20px;
+}}
+
+  /* Estilos para los iconos sociales en pantallas grandes */
+.social-icons {
+    justify-content: flex-end;
+}
+.Fotos{
+    display: flex;
+    justify-content: center;
+}
+/* Estilos para la clase "fotito" en pantallas grandes */
+.fotito {
+    width: 50%;
+}
+
+/* Estilos para la clase "fotito" en pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+.fotito {
+    width: 100%;
+}
+}
+
+
+/*Login*/
+/* Estilo para el contenedor del fondo en la página principal */
+.body-Login {
+    margin: 0%;
+    background-size: cover;
+    font-family: sans-serif;
+    min-height: 100vh;
+    font-family: 'Mukta', sans-serif !important;
+    background-image: linear-gradient(to right, red, pink);
+}
+
+/* Define el fondo de color negro para la sección ".background" */
+.background{
+    background-color: #000;
+    position: relative;
+}
+
+/* Asegura que la imagen en la sección ".background" ocupe todo el ancho de la página */
+.background img {
+    width: 100%;
+    display: block;
+}
+
+/* Crea una barra de navegación "nav-bar2" en la parte inferior de la página */
+.nav-bar2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+
+/* Define la barra de navegación "nav" en la parte superior de la página */
+nav {
+    top: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+/* Alinea los elementos de la lista en la barra de navegación "nav" */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+/* Define el estilo para los enlaces en la barra de navegación "nav" */
+nav a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Define el estilo para los enlaces en la barra de navegación "nav" cuando el cursor pasa sobre ellos */
+nav a:hover {
+    background-color: #444;
+}
+
+/* Define el estilo para la sección de inicio de sesión "login-box" */
+.login-box {
+width: 100%;
+max-width: 320px;
+height: auto;
+background: #000;
+color: #fff;
+position: relative;
+margin: 50px auto;
+box-sizing: border-box;
+padding: 70px 30px 30px;
+}
+
+/* Estilos para pantallas de dispositivos móviles */
+@media only screen and (max-width: 480px) {
+.login-box {
+max-width: 100%;
+margin: 20px auto;
+padding: 50px 20px 20px;
+}
+}
+
+/* Define el estilo para la imagen "avatar" en la sección de inicio de sesión "login-box" */
+.login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+/* Estilo para la sección de inicio de sesión */
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* Estilo para las etiquetas de los elementos de formulario */
+.login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+/* Estilo común para los elementos de formulario */
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Define el estilo para la sección de inicio de sesión "login-box" en pantallas grandes */
+.login-box {
+    margin-top: 70px
+}
+}
+
+/* Estilo para los elementos de texto y contraseña */
+.login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Estilo para el botón de inicio de sesión */
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+/* Estilo de hover para el botón de inicio de sesión */
+.login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+/* Estilo para el enlace de recuperación de contraseña */
+.login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+/* Estilo de hover para el enlace de recuperación de contraseña */
+.login-box a:hover {
+    color: #fff;
+}
+/*estilo para el pie de pagina*/
+.footer-login {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    word-spacing: 20px;
+    letter-spacing: 5px; 
+}
+
+.footer-login a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-login a:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilo global para asegurarse de que todos los elementos tengan un tamaño de borde adecuado */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilo para la sección de contactos */
+.body-contactos{
+    background: #181818;
+    color: #fff;
+    font-family: 'Mukta', sans-serif !important;
+}
+
+/* Estilo para la barra de navegación en la página de contactos */
+.nav-contactos {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+}
+/* Título: Lista del Navbar de Contactos */
+.ul-contactos {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+/* Título: Enlaces del Navbar de Contactos */
+.a-contactos{
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Título: Efecto hover en enlaces del Navbar de Contactos */
+nav a:hover {
+    background-color: #444;
+}
+
+/* Título: Contenedor Principal */
+.container {
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* Título: Estilo para listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Título: Logo */
+.logo {
+    text-align: center;
+    font-size: 3em;
+}
+
+/* Título: Color del Logo */
+.logo span {
+    color: #B70E21;
+}
+
+/* Título: Contenedor del Formulario de Contacto */
+.contact-wrapper {
+    width: 80%;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+/* Título: Espaciado interno del Contenedor del Formulario de Contacto */
+.contact-wrapper > * {
+    padding: 30px;
+}
+
+/* Título: Formulario de Contacto */
+.contact-form {
+    width: 100%;
+    background: #222222;
+}
+/* Sección de diseño de formulario */
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Estilo para etiquetas */
+.contact-form form label {
+    display: block;
+}
+
+/* Estilo para párrafos */
+.contact-form form p {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Estilo para bloques */
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+/* Estilo para botones, entradas y áreas de texto */
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+
+/* Estilo para botones */
+.contact-form form button {
+    background: #B70E21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+/* Sección de pie de página de contactos */
+.footer-contactos {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+/* Sección Body Nosotros */
+.Body-Nosotros{
+background-color: rgb(208, 40, 40);
+}
+
+/* Sección Navigación Nosotros */
+.nav-nosotros {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+/* Estilos de la lista de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos de los enlaces de la navegación */
+nav a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos de hover en los enlaces de la navegación */
+nav a:hover {
+    background-color: #444;
+}
+
+#about-us h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 2px 2px 2px #ccc;
+}
+
+
+/* Contenedor sobre nosotros */
+.about-us-container {
+    display: flex;
+    flex-direction: column; /* Cambio a dirección vertical */
+    align-items: center;
+    padding: 30px 20px;
+}
+
+/* Sección de imágenes sobre nosotros */
+.about-us-images {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Agregado margen inferior */
+}
+
+/* Estilos de las imágenes sobre nosotros */
+.about-us-images img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Eliminado margen adicional */
+    padding: 20px;
+    background-color: #000;
+}
+
+.about-us-info {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.about-us-info h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.about-us-info p {
+    margin-bottom: 20px;
+}
+
+/* Título de información sobre nosotros */
+.about-us-info h2 {
+    margin-bottom: 20px; /* Eliminado margen adicional */
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+
+    /* Estilos de la lista de navegación */
+    nav ul {
+        flex-direction: column; /* Cambio a dirección vertical */
+    }
+
+    /* Estilos de los enlaces de la navegación */
+    nav a {
+        padding: 10px; /* Reducción de padding */
+    }
+
+    /* Título sobre nosotros */
+    #about-us h1 {
+        font-size: 30px; /* Reducción de tamaño de fuente */
+    }
+
+    /* Contenedor sobre nosotros */
+    .about-us-container {
+        padding: 20px; /* Reducción de padding */
+    }
+
+    /* Estilos de las imágenes sobre nosotros */
+    .about-us-images img {
+        margin-bottom: 10px; /* Reducción de margen inferior */
+    }
+
+    /* Título de información sobre nosotros */
+    .about-us-info h2 {
+        margin-bottom: 10px; /* Reducción de margen inferior */
+    }
+}
+/* Pie de página sobre nosotros */
+.footer-nosotros {
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    word-spacing: 20px;
+    letter-spacing: 5px; 
+}
+
+.footer-nosotros a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-nosotros a:hover {
+    color: #e67e22;
+}
+
+@media (max-width: 768px) {
+    .footer-nosotros {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-nosotros {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+}
+
+
+
+
+/*seccion de COMPRAS/*
+/* Sección para el Body de la página Compras */
+
+.body-compras{
+    margin: 0px;
+    background-image: linear-gradient(to right, red, pink) !important; 
+}
+
+/* Estilo para la sección del carrito de compras */
+.cart {
+    display: block;
+    width: 90%;
+    margin: 50px auto;
+    padding: 80px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .cart {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart {
+        width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+}
+
+/* Título para el carrito de compras */
+.cart h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    }
+    
+    /* Tabla para mostrar los productos en el carrito */
+    .cart table {
+    width: 100%;
+    border-collapse: collapse;
+    }
+    
+    /* Estilo para las celdas de la tabla del carrito */
+    .cart th,
+    .cart td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    }
+    
+    /* Estilo para el encabezado de la tabla */
+    .cart th {
+    background-color: #333;
+    color: #fff;
+    }
+    
+    /* Botón para finalizar la compra */
+    .cart button {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(248, 4, 4);
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    }
+    
+    /* Media query para dispositivos móviles /
+    @media only screen and (max-width: 480px) {
+    / Cambia el ancho de la tabla para que se ajuste a pantallas más pequeñas */
+    .cart table {
+    width: 100%;
+    }
+    
+    /* Ajusta el tamaño de fuente para que sea legible en pantallas pequeñas */
+    .cart td, .cart th {
+    font-size: 12px;
+    }
+    
+    /* Ajusta el tamaño del botón para pantallas pequeñas */
+    .cart button {
+    font-size: 14px;
+    }
+    
+    
+    
+/* Estilo para la navegación en la página Compras */
+.nav-compras {
+    top: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .nav-compras {
+        position: fixed;
+        z-index: 1;
+    }
+}
+
+/* Estilo para la lista de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para los enlaces de navegación */
+nav a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo para los enlaces de navegación al pasar el cursor */
+nav a:hover {
+    background-color: #444;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        margin: 10px 0;
+    }
+}
+
+.footer-compras {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #232528;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    word-spacing: 20px;
+    letter-spacing: 5px; 
+    }
+    
+.footer-compras a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    }
+    
+    .footer-compras a:hover {
+    color: #e67e22;
+    }
+    
+    
+
+@media (max-width: 480px) {
+    .footer-compras {
+        padding: 10px 0;
+    }
+}

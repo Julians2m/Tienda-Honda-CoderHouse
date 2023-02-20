@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Honda</title>
+    <link rel="stylesheet" href="../CoderHouse/css/style.css">
+    <link
+    href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,700,800&display=swap"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-/kfu3q5yt5L+7FLaTY2E2V7SPoRxz8YD7pBOZPXBuV7X9SOt8u4BN4twom1irHse7pDwF8oCf5oqbZcS5q5ysQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="body-home">
+    <header>
+        <div class="page-nav">
+            <a href="#" class="Logo">
+                <img src="./imgs/hondalogo-1.png" class="Logo" alt="Logo de la compañia">
+            </a>
+            <a href="../CoderHouse/sections/compras.html">
+                <button id="checkout" class="button-checkout" onclick="pay()">
+                    <img src="./imgs/shopping-cart.svg" alt="carro"></button>
+            </a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../CoderHouse/index.html">Inicio</a></li>
+            <li><a href="../CoderHouse/sections/nosotros.html">Nosotros</a></li>
+            <li><a href="../CoderHouse/sections/login.html">Login</a></li>
+            <li><a href="../CoderHouse/sections/contactos.html">Contacto</a></li>
+        </ul>
+    </nav>
+        <div class="center-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/zue4yySvsM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="page-content">
+        <div class="product-container">
+            <p>CB Twister 250cc</p>
+            <img src="./imgs/honda.jpg" />
+            <p>U$ 4.500</p>
+            <button class="button-add" onclick="add('product-1', 50)">Agregar</button>
+        </div>
+        <div class="product-container">
+            <p>XR Rally 150cc</p>
+            <img src="./imgs/Honda2.jpg" />
+            <p>$900.000</p>
+            <button class="button-add" onclick="add('product-2', 300)">Agregar</button>
+        </div>
+        <div class="product-container">
+            <p>NC 700cc</p>
+            <img src="./imgs/Honda3.jpg" />
+            <p>U$10.500</p>
+            <button class="button-add" onclick="add('product-3', 250)">Agregar</button>
+        </div>
+        <div class="product-container">
+            <p>CB 190R</p>
+            <img src="./imgs/Honda4.jpg" />
+            <p>$1.000.000</p>
+            <button class="button-add" onclick="add('product-4', 200)">Agregar</button>
+        </div>
+        <div class="product-container">
+            <p>New Titan 150cc</p>
+            <img src="./imgs/Honda5.jpg" />
+            <p>$950.000</p>
+            <button class="button-add" onclick="add('product-5', 10)">Agregar</button>
+        </div>
+        <div class="product-container">
+            <p>CB 300cc</p>
+            <img src="./imgs/Honda6.jpg" />
+            <p>2.000.000</p>
+            <button class="button-add" onclick="add('product-6', 650)">Agregar</button>
+        </div>
+            <div class="Fotos">
+                <img class="fotito" src="./imgs/Iniciopagina.jpg" alt=".Fotos">
+            </div>
+        </div>
+    <footer>
+        <footer class="footer">
+            <div class="footer-container">
+            <div class="footer-section">
+                <h3>Navegación</h3>
+                <ul>
+                <li><a href="../CoderHouse/index.html">Inicio</a></li>
+                <li><a href="../CoderHouse/sections/compras.html">Comprar</a></li>
+                <li><a href="../CoderHouse/sections/contactos.html">Contacto</a></li>
+                <li><a href="../CoderHouse/sections/nosotros.html">Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <ul>
+                <li><a href="#">Soporte técnico</a></li>
+                <li><a href="#">Consultoría</a></li>
+                <li><a href="#">Desarrollo web</a></li>
+                <li><a href="#">Marketing digital</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Falsa 123</li>
+                <li><i class="fas fa-phone"></i> Teléfono: +1 234 567 8901</li>
+                <li><i class="fas fa-envelope"></i> Correo: info@tudominio.com</li>
+                </ul>
+            </div>
+            </div>
+            <div class="footer-bottom">
+            <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>
