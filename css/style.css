@@ -295,6 +295,9 @@ nav a:hover {
 /* Estilos para la clase "fotito" en pantallas grandes */
 .fotito {
     width: 50%;
+    padding: 0px 10px;
+    margin-top: 10px;
+    margin-bottom: 17px;
 }
 
 /* Estilos para la clase "fotito" en pantallas más pequeñas */
