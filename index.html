@@ -11,7 +11,12 @@
     rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-/kfu3q5yt5L+7FLaTY2E2V7SPoRxz8YD7pBOZPXBuV7X9SOt8u4BN4twom1irHse7pDwF8oCf5oqbZcS5q5ysQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="website icon" type="png" href=".//imgs/Logo-Honda2.webp">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="index.js"></script>
 </head>
+
 <body class="body-home">
     <header>
         <div class="page-nav">
@@ -32,8 +37,17 @@
             <li><a href="../CoderHouse/sections/contactos.html">Contacto</a></li>
         </ul>
     </nav>
-        <div class="center-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/zue4yySvsM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imgs/Iniciopagina.jpg"></div>
+            <div class="swiper-slide"><img src="imgs/iniciopagina2.jpg"></div>
+            <div class="swiper-slide"><img src="imgs/iniciopagina3.jpg"></div>
         </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    
         <div class="page-content">
         <div class="product-container">
             <p>CB Twister 250cc</p>
