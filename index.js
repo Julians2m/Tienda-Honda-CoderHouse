@@ -67,5 +67,3 @@ function showCart() {
 }
 const showCartButton = document.querySelector('#show-cart-button');
 showCartButton.addEventListener('click', showCart);
-
-// proyecto carrito de compras: compras.html
