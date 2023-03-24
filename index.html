@@ -11,7 +11,12 @@
     rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-/kfu3q5yt5L+7FLaTY2E2V7SPoRxz8YD7pBOZPXBuV7X9SOt8u4BN4twom1irHse7pDwF8oCf5oqbZcS5q5ysQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="website icon" type="png" href=".//imgs/Logo-Honda2.webp">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="index.js"></script>
 </head>
+
 <body class="body-home">
     <header>
         <div class="page-nav">
@@ -32,14 +37,26 @@
             <li><a href="./sections/contactos.html">Contacto</a></li>
         </ul>
     </nav>
-        <div class="center-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/zue4yySvsM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="imgs/Iniciopagina.jpg">
+            </div>
+                <div class="swiper-slide"><img src="imgs/iniciopagina2.jpg"></div>
+            <div class="swiper-slide"><img src="imgs/iniciopagina3.jpg"></div>
         </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+    </div>
         <div class="page-content">
-        <div class="product-container">
-            <p>CB Twister 250cc</p>
+            <div class="product-container">
+                <p>CB Twister 250cc</p>
             <img src="./imgs/honda.jpg" />
-            <p>U$ 4.500</p>
-            <button class="button-add" onclick="add('product-1', 50)">Agregar</button>
+                <p>U$ 4.500</p>
+            <button class="button-add"
+                onclick="addToCart('CB Twister 250cc', 4500, 1)">Agregar
+            </button>
         </div>
         <div class="product-container">
             <p>XR Rally 150cc</p>
@@ -65,19 +82,31 @@
             <p>$950.000</p>
             <button class="button-add" onclick="add('product-5', 10)">Agregar</button>
         </div>
-        <div class="product-container">
-            <p>CB 300cc</p>
-            <img src="./imgs/Honda6.jpg" />
-            <p>2.000.000</p>
-            <button class="button-add" onclick="add('product-6', 650)">Agregar</button>
+            <div class="product-container">
+                <p>CB 300cc</p>
+                <img src="./imgs/Honda6.jpg" />
+                <p>2.000.000</p>
+                <button class="button-add" onclick="add('product-6', 650)">Agregar</button>
         </div>
             <div class="Fotos">
                 <img class="fotito" src="./imgs/Iniciopagina.jpg" alt=".Fotos">
             </div>
         </div>
+        
+        <section class="quote-section">
+                <div class="logo">
+                    <img src="imgs/Honda.logo.frase.jpg" alt="Logo de Honda">
+                </div>
+            <blockquote>
+                "El éxito es 99% fracaso."
+            </blockquote>
+                            <cite>- Soichiro Honda</cite>
+        </section>
+        
     <footer>
         <footer class="footer">
             <div class="footer-container">
+<<<<<<< HEAD
             <div class="footer-section">
                 <h3>Navegación</h3>
                 <ul>
@@ -86,37 +115,46 @@
                 <li><a href="./sections/contactos.html">Contacto</a></li>
                 <li><a href="./sections/nosotros.html">Nosotros</a></li>
                 </ul>
+=======
+                <div class="footer-section">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="../CoderHouse/index.html">Inicio</a></li>
+                        <li><a href="../CoderHouse/sections/compras.html">Comprar</a></li>
+                        <li><a href="../CoderHouse/sections/contactos.html">Contacto</a></li>
+                        <li><a href="../CoderHouse/sections/nosotros.html">Nosotros</a></li>
+                    </ul>
+>>>>>>> 8515b28ec015fe6bfd7d503a3005342688554fc0
             </div>
             <div class="footer-section">
                 <h3>Servicios</h3>
-                <ul>
-                <li><a href="#">Soporte técnico</a></li>
-                <li><a href="#">Consultoría</a></li>
-                <li><a href="#">Desarrollo web</a></li>
-                <li><a href="#">Marketing digital</a></li>
-                </ul>
+                    <ul>
+                        <li><a href="#">Soporte técnico</a></li>
+                        <li><a href="#">Consultoría</a></li>
+                        <li><a href="#">Desarrollo web</a></li>
+                        <li><a href="#">Marketing digital</a></li>
+                    </ul>
             </div>
             <div class="footer-section">
                 <h3>Redes Sociales</h3>
-                <ul class="social-icons">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
             </div>
-        <div class="footer-section">
+            <div class="footer-section">
                 <h3>Contacto</h3>
-                <ul>
-                <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Falsa 123</li>
-                <li><i class="fas fa-phone"></i> Teléfono: +1 234 567 8901</li>
-                <li><i class="fas fa-envelope"></i> Correo: info@tudominio.com</li>
-                </ul>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Falsa 123</li>
+                        <li><i class="fas fa-phone"></i> Teléfono: +1 234 567 8901</li>
+                        <li><i class="fas fa-envelope"></i> Correo: info@tudominio.com</li>
+                    </ul>
             </div>
-            </div>
-            <div class="footer-bottom">
-            <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
-            </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
+                </div>
         </footer>
     </footer>
 </body>
